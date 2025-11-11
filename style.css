@@ -32,7 +32,7 @@ img{
 }
 
 .main{
-    width: 400px;
+    width: 25rem;
     background-color: var(--Blue-50);
     line-height: 1.5; 
     margin: 5em 0;
@@ -63,11 +63,11 @@ img{
     gap: 1em;
     background-color:hsla(225, 100%, 94%, 0.4); 
     padding: 2em 1em;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .song-icon{
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background: url(./images/icon-music.svg);
 }
 .annual-text{
@@ -135,9 +135,7 @@ a{
     cursor: pointer;
 }
 
-.attribution { 
-    position: absolute;
-    bottom: -13rem;
+.attribution {  
     text-align: center; 
 }
 .attribution a { 
@@ -150,3 +148,28 @@ a{
     color: coral;
     text-decoration:dashed hsl(228, 45%, 44%) underline;
 }
+
+
+
+
+@media screen and (max-width:31.25rem) {
+        .main{
+            width: 22rem;
+        }
+          
+        .annual-text{
+            margin-right: 0;
+        } 
+}
+@media screen and (max-width:25rem) { 
+        .main{
+            width: 18.75rem;
+        }
+        .plan{
+            flex-direction: column; 
+            
+        }
+        .annual-text{
+            margin-right: 0;
+        } 
+} 
