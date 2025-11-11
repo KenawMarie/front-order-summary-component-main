@@ -28,6 +28,7 @@ body{
 img{
     display: block;
     width: 100%;
+    border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .main{
@@ -36,7 +37,9 @@ img{
     line-height: 1.5; 
     margin: 5em 0;
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
+    border-radius: 1.25rem; 
+    box-shadow:-5px 5px 5px 1px var(--Blue-950) ;
 }
 
 .text{
@@ -56,6 +59,7 @@ img{
 .plan{
     margin: 2em 0;
     display: flex;
+    align-items: center;
     gap: 1em;
     background-color:hsla(225, 100%, 94%, 0.4); 
     padding: 2em 1em;
@@ -84,6 +88,12 @@ a{
     font-weight: 700;
 }
 
+.plan a:hover,
+.plan a:focus{
+    color: hsla(245, 75%, 52%, 0.692);
+    cursor: pointer;
+    text-decoration: none;
+}
 
 .btn{ 
     /* all:unset; */
@@ -99,6 +109,12 @@ a{
     padding: 0.9rem 0;
     white-space: nowrap;
     margin: 0.5em 0;
+    box-shadow:-5px 5px 5px 1px var(--Blue-950) ;
+}
+.btn:hover,
+.btn:focus{ 
+    background-color:hsla(245, 75%, 52%, 0.733);
+    cursor: pointer;
 }
 
 .cancel{
@@ -113,12 +129,24 @@ a{
     border: 0;
 }
 
-   
+.cancel:hover,
+.cancel:focus{ 
+    color: var(--Blue-950);
+    cursor: pointer;
+}
 
-
-
-
-
-
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+.attribution { 
+    position: absolute;
+    bottom: -13rem;
+    text-align: center; 
+}
+.attribution a { 
+    font-size: 1.2rem; 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+.attribution a:hover,
+.attribution a:focus {   
+    color: coral;
+    text-decoration:dashed hsl(228, 45%, 44%) underline;
+}
